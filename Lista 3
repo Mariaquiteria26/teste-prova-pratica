@@ -26,7 +26,13 @@
 #    print(f"{N} * {i} = {resultado} ")
 
 
+N = int(input("Digite um número: "))
+primo = True
+for n in range(2, N):
+    if N % n == 0:
+        primo = False
 
-
-
-
+if primo:
+    print("é primo")
+else:
+    print("Não é primo")
